@@ -31,3 +31,9 @@ Em componente HeaderButton:
 VOY minuto 42: 
 ultimo commit: git commit -m "Creo dos componentes,uno para estilo botones y otro header añado slot para poner simbolo a derecha boton o izquierda"
 
+Minuto 44:33
+ultimo commit:git commit -m "Quito texto por defecto a slot botones"
+
+iconos svg:
+https://tabler.io/icons
+
