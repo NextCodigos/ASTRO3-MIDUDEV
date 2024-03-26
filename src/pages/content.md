@@ -1,163 +1,126 @@
-<p>A. Uso de var, let y const</p>
+---
+title: 'Contenido de la pagina'
+layout: '../layouts/Layout.astro'
+---
 
-<p>1. var y let se pueden declarar sin iniciar:</p>
-<p>JavaScript</p>
+# Esto es un ejemplo de Javascript
 
-<p>var gato;</p>
-<p>let carro;</p>
-<p>console.log(gato); // Salida: undefined</p>
-<p>console.log(carro); // Salida: undefined</p>
+## Subtitulo
 
-<p>Usa el código con precaución.</p>
+```javascript
+function(){
+  console.log('Hola mundo')
+}
 
-<p>2. var se puede redeclarar:</p>
-<p>JavaScript</p>
+```
+```
+JavaScript Example
+javascript
+function(){
+  console.log('Hola mundo')
+}
 
-<p>var gato = 'Felix';</p>
-<p>console.log(gato); // Salida: Felix</p>
-<p>var gato = 'Bobby';</p>
-<p>console.log(gato); // Salida: Bobby</p>
+```
 
-<p>Usa el código con precaución.</p>
+# Uso de var, let y const
 
-<p>3. let no se puede redeclarar:</p>
-<p>JavaScript</p>
+## var y let se pueden declarar sin iniciar:
 
-<p>let perro = 'Tobby';</p>
-<p>// let perro = 'Bobby'; // Error de sintaxis: El identificador 'perro' ya ha sido declarado</p>
-<p>console.log(perro); // Salida: Tobby</p>
+* var gato;
+* let carro;
+* console.log(gato); // Salida: undefined
+* console.log(carro); // Salida: undefined
 
-<p>perro = 'Bobby';</p>
-<p>console.log(perro); // Salida: Bobby</p>
+## var se puede redeclarar:
 
-<p>Usa el código con precaución.</p>
+```
+var gato = 'Felix';
+console.log(gato); // Salida: Felix
+var gato = 'Bobby';
+console.log(gato); // Salida: Bobby
+```
 
-<p>4. const no se puede declarar sin iniciar:</p>
-<p>JavaScript</p>
+## let no se puede redeclarar:
+```
+let perro = 'Tobby';
+// let perro = 'Bobby'; // Error de sintaxis: El identificador 'perro' ya ha sido declarado
+console.log(perro); // Salida: Tobby
+perro = 'Bobby';
+console.log(perro); // Salida: Bobby
+```
+## const no se puede declarar sin iniciar:
+```
+// const direccion;
+const direccion = 'avenida Paseos';
+console.log(direccion); // Salida: avenida Paseos
 
-<p>// const direccion;</p>
-<p>const direccion = 'avenida Paseos';</p>
-<p>console.log(direccion); // Salida: avenida Paseos</p>
+const no se puede reasignar:
 
-<p>Usa el código con precaución.</p>
+// direccion = 'avenida Principal'; // TypeError: Asignación a una variable constante.
+```
 
-<p>5. const no se puede reasignar:</p>
-<p>JavaScript</p>
-
-<p>// direccion = 'avenida Principal'; // TypeError: Asignación a una variable constante.</p>
-<p>// console.log(direccion);</p>
-
-<p>Usa el código con precaución.</p>
-
-<p>6. Alcance (scope):</p>
-
-<p>var: es visible en la función donde se declaró o globalmente.</p>
-<p>let y const: son visibles en el bloque donde se declararon o globalmente.</p>
-
-<p>B. Reglas para nombrar variables:</p>
-
-<p>1. No se pueden usar palabras reservadas (function, var, for, while, etc.).</p>
-<p>2. No pueden empezar con un dígito:</p>
-<p>JavaScript</p>
-
-<p>// let 2x = 6; // Error de sintaxis</p>
-
-<p>Usa el código con precaución.</p>
-
-<p>3. Pueden empezar con una letra, guión bajo o $:</p>
-<p>JavaScript</p>
-
-<p>let $car = 'ford mustang';</p>
-<p>console.log($car); // Salida: ford mustang</p>
-
-<p>Usa el código con precaución.</p>
-
-<p>4. Para nombres complejos se usa notación de camello:</p>
-<p>JavaScript</p>
-
-<p>let userName = 'Juan';</p>
-
-<p>Usa el código con precaución.</p>
-<p>C. Tipos de datos en JavaScript:</p>
-
-<p>1. number:</p>
-<p>JavaScript</p>
-
-<p>let velocidad = 98.5;</p>
-<p>console.log(typeof velocidad); // Salida: number</p>
-
-<p>Usa el código con precaución.</p>
-
-<p>2. string:</p>
-<p>JavaScript</p>
-
-<p>let userName = 'Sergio';</p>
-<p>console.log(typeof userName); // Salida: string</p>
-
-<p>Usa el código con precaución.</p>
-
-<p>3. boolean:</p>
-<p>JavaScript</p>
-
-<p>let isActive = true;</p>
-<p>console.log(typeof isActive); // Salida: boolean</p>
-
-<p>Usa el código con precaución.</p>
-
-<p>4. array (matrices):</p>
-<p>JavaScript</p>
-
-<p>let carros = ['Ford Mustang', 'Toyota Corolla', 'Honda Accord'];</p>
-<p>console.log(typeof carros); // Salida: object</p>
-
-<p>Usa el código con precaución.</p>
-
-<p>5. object:</p>
-<p>JavaScript</p>
-
-<p>let carro = { modelo: 'Ford Mustang', potencia: 300, velocidad: 200 };</p>
-<p>console.log(typeof carro); // Salida: object</p>
-
-<p>Usa el código con precaución.</p>
-
-<p>6. undefined:</p>
-<p>JavaScript</p>
-
-<p>let nombre;</p>
-<p>console.log(typeof nombre); // Salida: undefined</p>
-
-<p>Usa el código con precaución.</p>
-
-<p>7. null:</p>
-<p>JavaScript</p>
-
-<p>let edad = null;</p>
-<p>console.log(typeof edad); // Salida: object</p>
-
-<p>Usa el código con precaución.</p>
-
-<p>Ejemplo de uso de reduce:</p>
-<p>JavaScript</p>
-
-<p>const array = [1, 2, 3, 4, 5];</p>
-
-<p>const sum = array.reduce(function(a, b){</p>
-<p>    return a + b;</p>
-<p>}, 0);</p>
-
-<p>console.log(sum); // Salida: 15</p>
-
-<p>Usa el código con precaución.</p>
-
-//////////////////////////////////////////
-//////////////////////////////////////////
+## Alcance (scope):
+```
+var: es visible en la función donde se declaró o globalmente.
+let y const: son visibles en el bloque donde se declararon o globalmente.
+Reglas para nombrar variables
+No se pueden usar palabras reservadas (function, var, for, while, etc.).
+No pueden empezar con un dígito.
+Pueden empezar con una letra, guión bajo o $.
+Para nombres complejos se usa notación de camello.
+Tipos de datos en JavaScript
+number:
+javascript
+let velocidad = 98.5;
+console.log(typeof velocidad); // Salida: number
+```
 
 
+## string:
+```
+let userName = 'Sergio';
+console.log(typeof userName); // Salida: string
+
+boolean:
+javascript
+let isActive = true;
+console.log(typeof isActive); // Salida: boolean
+
+array (matrices):
+javascript
+let carros = ['Ford Mustang', 'Toyota Corolla', 'Honda Accord'];
+console.log(typeof carros); // Salida: object
+
+object:
+javascript
+let carro = { modelo: 'Ford Mustang', potencia: 300, velocidad: 200 };
+console.log(typeof carro); // Salida: object
+
+undefined:
+javascript
+let nombre;
+console.log(typeof nombre); // Salida: undefined
+
+null:
+javascript
+let edad = null;
+console.log(typeof edad); // Salida: object
+
+Ejemplo de uso de reduce:
+javascript
+const array = [1, 2, 3, 4, 5];
+
+const sum = array.reduce(function(a, b){
+    return a + b;
+}, 0);
+
+console.log(sum); // Salida: 15
+```
 
 
-/*Tipo de Datos en JavaScript*/
-
-/*1 number -(2^53 − 1) and (2^53 − 1)*/
+## Tipo de Datos en JavaScript*/
+```
+1 number -(2^53 − 1) and (2^53 − 1)*/
 
 let velocidad = 98.5;
 console.log(typeof velocidad);
@@ -202,11 +165,11 @@ console.log(typeof (carros));
 let carro = { modelo: 'Ford Mustang', potencia: 300, velocidad: 200 };
 console.log(typeof carro);
 
+```
 
 
-
-/*Copiado por referencia*/
-
+## Copiado por referencia
+```
 let x = [2, 4];
 
 let y = x;
@@ -215,7 +178,7 @@ y.push(5);
 
 console.log(x);
 console.log(y);
-
+```
 
 
 
@@ -223,7 +186,7 @@ console.log(y);
 //////////////////////////////////////////
 //////////////////////////////////////////
 
-
+```
 const actualizador = setInterval(function(){
 
 //Definimos el tiempo de inicio en milisegundos
@@ -292,11 +255,9 @@ contador.innerHTML = `
 
 console.log('test');
 
+```
 
-
-//////////////////////////////////////////
-//////////////////////////////////////////
-
+```
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -345,9 +306,12 @@ console.log('test');
 </body>
 </html>
 
+```
 
-/* Concepto #1 Truthy ---> Todos los valores son verdaderos al menos que se definan como falso ( excepto false, 0, "", null, undefined, y NaN */
 
+## Concepto #1 Truthy ---> Todos los valores son verdaderos al menos que se definan como falso ( excepto false, 0, "", null, undefined, y NaN */
+
+```
 // let x = 1;
 // x = true;
 // x = [];
@@ -620,15 +584,14 @@ img{
 
 </style>
 
+```
 
 
-//////////////////////////////////////////
-//////////////////////////////////////////
 
-/* Funcion -->  instrucciones que realizan una tarea o calculan un valor*/
+## Funcion -->  instrucciones que realizan una tarea o calculan un valor*/
  
- /*Declaracion de una funcion sin return*/
- 
+ * Declaracion de una funcion sin return
+ ```
  function imprimeMensaje() {
     console.log('Hola soy una funcion!');
 }
@@ -695,33 +658,16 @@ console.log(calcula(45, 35, 62));
    En JavaScript  el hoisting funciona solamente con las declaraciones*/
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 console.log(aprendeLasFunciones(false));
 
 
+```
 
-//////////////////////////////////////////
-//////////////////////////////////////////
 
-/*CICLOS IMPLEMENTADOS CON FOR */
+
+## CICLOS IMPLEMENTADOS CON FOR 
+
+```
 // for (let i = 1; i <=4; i++) {
 //     console.log(`iteracion ${i}`);
 // }
@@ -785,13 +731,11 @@ newArray.push(5);
 console.log(newArray);
 console.log(artists);
 
+```
 
 
-//////////////////////////////////////////
-//////////////////////////////////////////
-
-/* ARRAYS*/
-
+## ARRAYS
+```
 const ejemploArray = [25, 'Ford Mustang', true, [1, 0]];
 
 /*CAMBIAR ARRAYS*/
@@ -865,14 +809,15 @@ carros.splice(0, 0, 'ford focus');
 console.log(carros);
 
 
+```
 
 
 
-//////////////////////////////////////////
-//////////////////////////////////////////
 
 
-//Variable para acceder el elemento input
+## Variable para acceder el elemento input
+
+```
 const newPassword = document.getElementById('newPassword');
 newPassword.addEventListener('keyup', checkPassword);
   
@@ -1017,20 +962,22 @@ toggleClass(element6, hasSpecialCharacter);
 
   </body>
 </html>
-//////////////////////////////////////////
-//////////////////////////////////////////
+
+```
 
 
-// Casi todo en JavaScript es un objeto (salvo los valores primitivos)
 
+## Casi todo en JavaScript es un objeto (salvo los valores primitivos)
+
+```
 // Un objeto  es una coleccion de clave-valor
 // edad:26
 // id: 0001
+```
 
 
-
-/*1. Crear un objeto (Constructor)*/
-
+## 1. Crear un objeto (Constructor)*/
+```
 // let carro = new Object();
 // console.log(typeof(carro));
 
@@ -1120,11 +1067,9 @@ console.log(car['nombre'])
   estudiante_01.imprimeNombre();
 
 
+```
 
-
-
-//////////////////////////////////////////
-//////////////////////////////////////////
+```
 
 
 function cambiaColor(element){
@@ -1167,17 +1112,17 @@ cambiaColor(caja);
 // cambiaColor(seccion);
 
 
+```
 
 
 
-//////////////////////////////////////////
-//////////////////////////////////////////
 
 
-/* #1 Cambios en el Estilo*/
+## #1 Cambios en el Estilo*/
 
-/* 1a) El atributo style*/
+## 1a) El atributo style*/
 
+```
 // const seccion = document.querySelector('#principal');
 // seccion.style.border = '3px solid red';
 // seccion.style.backgroundColor = '#f3f3f3';
@@ -1226,12 +1171,12 @@ cambiaColor(caja);
 
 // seccion.removeChild(ultimoDiv);
 
+```
 
-//////////////////////////////////////////
-//////////////////////////////////////////
 
-/*EVENTOS EN JAVASCRIPT*/
+## EVENTOS EN JAVASCRIPT
 
+```
 /* Variables*/
 const carro = document.querySelector('.carro');
 const boton = document.querySelector('.boton');
@@ -1283,15 +1228,14 @@ seccion.addEventListener('mouseenter', cambiaColor);
 seccion.removeEventListener('mousenter', cambiaColor);
 
 
+```
 
 
-//////////////////////////////////////////
-//////////////////////////////////////////
 
 /*********************************/
-/*CONCEPTO#1 ==> CODIGO SINCRONO*/
+## CONCEPTO#1 ==> CODIGO SINCRONO
 /********************************/
-
+```
 //Tradicionalmente, JavaScript es single-threaded (de un solo hilo)
 //thread(hilo ) --> proceso que la aplicacion puede usar para completar tareas)
 //En JavaScript sincrono, las tareas se ejecutan en secuencia (1, 2, 3, 4, etc.)
@@ -1479,11 +1423,12 @@ const chequeaCalificacion = (calificacion) => {
 //   .catch((error) => {
 //     console.log(error);
 //   });
+```
 
 /****************************/
-/*CONCEPTO#5 ==> async await*/
+## CONCEPTO#5 ==> async await
 /****************************/
-
+```
 //async await es azucar sintactico para trabajar mas facil con promises
 
 async function pideTelefonoNuevo(comportamiento, calificacion) {
@@ -1501,10 +1446,11 @@ async function pideTelefonoNuevo(comportamiento, calificacion) {
 pideTelefonoNuevo(true, 75);
 
 
-
+```
 
 //////////////////////////////////////////
 
+```
 const carros = [
   {
     modelo: 'Ford Mustang',
@@ -1568,11 +1514,11 @@ const funcionReductora = (millajeInicial, valorCorriente) =>
 let x = carros.reduce(funcionReductora, 0);
 console.log(x);
 
+```
 
-//////////////////////////////////////////
 
-// 1) En una aplicacion WEB los datos JSON se reciben como una cadena
-
+## 1) En una aplicacion WEB los datos JSON se reciben como una cadena
+```
 const cars = `[
    {
       "modelo": "ford mustang",
@@ -1636,13 +1582,13 @@ fs.writeFile('cars.json', newCar, (error)=>{
    console.log('Informacion recibida');
 });
 
+```
 
 
-//////////////////////////////////////////
 
 
-// Informacion del REST COUNTRIES API
-
+## Informacion del REST COUNTRIES API
+```
 const url = 'https://restcountries.com/v2/name/';
 
 
@@ -1685,10 +1631,10 @@ const recibeInfo = async () => {
 }
 
 envio.addEventListener('click', recibeInfo);
-
+```
 //////////////////////////////////////////
 
-
+```
 
 const formulario = document.querySelector('#formulario');
 
@@ -1708,7 +1654,8 @@ console.log(JSON.stringify(datosCompletos));
 
 }
 
-
+```
+```
 
 /*Funcion Para Extraer un solo dato del formulario */
 
@@ -1727,7 +1674,7 @@ const procesaDatos = (event) => {
 
 formulario.addEventListener('submit', procesaTodo);
 
-
+```
 
 //////////////////////////////////////////
 
@@ -1787,6 +1734,7 @@ formulario.addEventListener('submit', procesaTodo);
 </html>
 
 
+```
 
 
 const btn = document.querySelector('#btn');
@@ -1873,13 +1821,13 @@ db.json
   ]
 }
 
+```
 
+## El Concepto de las Clases*/
 
-//////////////////////////////////////////
-/*#1 El Concepto de las Clases*/
+## En JavaScript Las clases son una plantilla general para crear objetos.*/
 
-/*En JavaScript Las clases son una plantilla general para crear objetos.*/
-
+```
 let estudiante_01 = {
     name: 'Sergio',
     nivel: 2,
@@ -1971,20 +1919,9 @@ console.log(estudiante01.generaID());
 // console.log(estudiante_03.tiempo)
 
 
+```
 
 
-
- 
-
-
-
-
-
-
-
-//////////////////////////////////////////
-
-//////////////////////////////////////////
 
 
 
