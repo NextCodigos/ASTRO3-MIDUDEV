@@ -28,4 +28,6 @@ Em componente HeaderButton:
         slot="after"
         width="24"
         height="24"
+VOY minuto 42: 
+ultimo commit: git commit -m "Creo dos componentes,uno para estilo botones y otro header añado slot para poner simbolo a derecha boton o izquierda"
 
