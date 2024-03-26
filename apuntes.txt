@@ -16,3 +16,16 @@ npm ERR! A complete log of this run can be found in: /home/next/.npm/_logs/2024-
   ╱  ~/M/F/S/ASTRO3/my-project ╱ on   NextCodigos !1 ?1      
 
 
+Em componente HeaderButton:
+
+ <slot name="before" />
+  <slot />
+  <slot name="after" />
+
+  y en Header astro para que salga simbolo delante o detras de boton:
+    after o before
+ <svg
+        slot="after"
+        width="24"
+        height="24"
+

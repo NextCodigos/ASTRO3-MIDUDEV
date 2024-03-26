@@ -1,28 +1,44 @@
 ---
-import HeaderButton from "./HeaderButton.astro"
+import HeaderButton from "./HeaderButton.astro";
 
-console.log('Header.astro');
-
-
+console.log("Header.astro");
 ---
 
 <header class="py-8 px-4 mx-auto max-w-xl lg:py-16 lg:px-6">
-<div class=" mx-auto text-center mb-8 lg:mb-16">
-	<h2 class="mb-4 text-5xl tracking-tight font-extrabold text-white">
-		Spaces Launches &nbsp;<span style="font-size: 30px;">&#x1F680;</span> &#x1F318;
-	</h2>
+  <div class="mx-auto text-center mb-8 lg:mb-16">
+    <h2 class="mb-4 text-5xl tracking-tight font-extrabold text-white">
+      Spaces Launches &nbsp;<span style="font-size: 30px;">&#x1F680;</span> &#x1F318;
+    </h2>
 
-	<p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">
-		All the information about SpaceX launches
-	</p>
-</div>
+    <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">
+      All the information about SpaceX launches
+    </p>
+  </div>
 
-<nav class="flex flex-col items-center justify-between w-full text-center md:flex-row">
-	<HeaderButton class="text-white" href="/">Últimos lanzamientos</HeaderButton>
-	<HeaderButton class="text-white" href="/about">Sobre el proyecto</HeaderButton>
-	<HeaderButton class="text-white" href="/oldest">Los mas viejos</HeaderButton>
-</nav>
-
-
+  <nav
+    class="flex flex-col items-center justify-between w-full text-center md:flex-row"
+  >
+    <HeaderButton class="text-white" href="/">Últimos lanzamientos</HeaderButton
+    >
+    <HeaderButton class="text-white" href="/about">
+      <svg
+        slot="after"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="icon icon-tabler icons-tabler-outline icon-tabler-info-circle"
+        ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+          d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></path><path d="M12 9h.01"
+        ></path><path d="M11 12h1v4h1"></path></svg
+      >
+      Sobre el proyecto</HeaderButton
+    >
+    <HeaderButton class="text-white" href="/oldest">Los mas viejos</HeaderButton
+    >
+  </nav>
 </header>
-
