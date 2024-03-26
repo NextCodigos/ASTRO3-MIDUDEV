@@ -1,0 +1,18 @@
+Si quiero estilos css globales:
+is:global
+
+Si quiero estilos css no procese:
+is:inline
+
+por defecto solo procesa en este componente 
+sino ponemos nada a style
+
+ERROR SERVIDOR PAGINAS ESTATICAS:
+❯ npx server ./dist
+npm ERR! could not determine executable to run
+
+npm ERR! A complete log of this run can be found in: /home/next/.npm/_logs/2024-03-26T00_41_50_216Z-debug-0.log
+
+  ╱  ~/M/F/S/ASTRO3/my-project ╱ on   NextCodigos !1 ?1      
+
+
