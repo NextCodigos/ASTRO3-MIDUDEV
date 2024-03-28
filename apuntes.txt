@@ -35,4 +35,8 @@ VOY minuto 46:
 ultimo commit en nueva rama:
 git commit -m "Añado archivo markdown y el layout comun"
 
+VOY minuto 49:
+ultimo commit en nueva rama:
+git commit -m "Añado archivo .html en pages y carpeta blog en pages con archivo markdown"
+
 
