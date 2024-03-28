@@ -31,9 +31,25 @@ Em componente HeaderButton:
 VOY minuto 42: 
 ultimo commit: git commit -m "Creo dos componentes,uno para estilo botones y otro header añado slot para poner simbolo a derecha boton o izquierda"
 
+nueva-rama
+VOY minuto 46:
+ultimo commit en nueva rama:
+git commit -m "Añado archivo markdown y el layout comun"
+
+VOY minuto 49:
+ultimo commit en nueva rama:
+git commit -m "Añado archivo .html en pages y carpeta blog en pages con archivo markdown"
+
+MINUTO 58:22
+commit:
+git commit -m "Creo componente CardLaunch.astro y veo los 12 launch con su id"
+
+ME FALLA ver IMAGENES 1h video volver comit ultimo
+
+=======
 Minuto 44:33
 ultimo commit:git commit -m "Quito texto por defecto a slot botones"
 
 iconos svg:
-https://tabler.io/icons
+ main
 
