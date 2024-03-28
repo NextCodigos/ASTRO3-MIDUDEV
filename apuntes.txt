@@ -39,6 +39,10 @@ VOY minuto 49:
 ultimo commit en nueva rama:
 git commit -m "Añado archivo .html en pages y carpeta blog en pages con archivo markdown"
 
+MINUTO 58:22
+commit:
+git commit -m "Creo componente CardLaunch.astro y veo los 12 launch con su id"
 
+ME FALLA ver IMAGENES 1h video volver comit ultimo
 
 
