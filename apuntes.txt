@@ -31,3 +31,8 @@ Em componente HeaderButton:
 VOY minuto 42: 
 ultimo commit: git commit -m "Creo dos componentes,uno para estilo botones y otro header añado slot para poner simbolo a derecha boton o izquierda"
 
+VOY minuto 46:
+ultimo commit en nueva rama:
+git commit -m "Añado archivo markdown y el layout comun"
+
+
