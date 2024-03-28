@@ -31,6 +31,7 @@ Em componente HeaderButton:
 VOY minuto 42: 
 ultimo commit: git commit -m "Creo dos componentes,uno para estilo botones y otro header añado slot para poner simbolo a derecha boton o izquierda"
 
+nueva-rama
 VOY minuto 46:
 ultimo commit en nueva rama:
 git commit -m "Añado archivo markdown y el layout comun"
@@ -41,4 +42,10 @@ git commit -m "Añado archivo .html en pages y carpeta blog en pages con archivo
 
 
 
+=======
+Minuto 44:33
+ultimo commit:git commit -m "Quito texto por defecto a slot botones"
+
+iconos svg:
+ main
 
