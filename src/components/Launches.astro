@@ -1,5 +1,7 @@
 ---
 import { type APISpaceXResponse } from "../types/api";
+import CardLaunch from "./CardLaunch.astro";
+
 // const res = await fetch("https://api.spacexdata.com/v5/launches");
 const res = await fetch("https://api.spacexdata.com/v5/launches/query", {
     method: "POST",
@@ -20,18 +22,38 @@ const res = await fetch("https://api.spacexdata.com/v5/launches/query", {
 const { docs: launches } = (await res.json()) as APISpaceXResponse;
 
 // console.log(data);
-console.log(launches);
+// console.log(launches);
 ---
+
+<!-- EJEMPLO 1 -->
+
+<!-- <div class="grid gap-8 sn:grid-col-2 lg:grid-cols-3">
+    {
+        launches.map((launch) => (
+            <CardLaunch 
+            id={launch.id}
+            img={launch.links.patch.small}
+            details={launch.details}
+            flightNumber={launch.flight_number}
+            success={launch.success}
+            />
+            
+            ))
+    }
+</div> -->
+<!-- Ejemplo 2 igual que arriba -->
 
 <div class="grid gap-8 sn:grid-col-2 lg:grid-cols-3">
     {
-        launches.map(
-            (launch) => (
-            <article>
-                <img src={launch.links.patch.small} alt="" />
-                <h2>Launch #{launch.id}</h2>
-
-            </article>
-        ))
+        launches.map(({ id, links, details,flight_number: flight_Number,success }) => (
+            <CardLaunch 
+            id={id}
+            img={links.patch.small}
+            details={details}
+            flightNumber={flight_Number}
+            success={success}
+            />
+            
+            ))
     }
 </div>
