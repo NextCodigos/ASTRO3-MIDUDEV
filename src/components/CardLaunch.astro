@@ -1,0 +1,22 @@
+---
+interface Props {
+    id: string;
+    name: string;
+    img: string;
+    success: boolean;
+    flightNumber: number;
+    details: string;
+}
+const { id, name, img, success, flightNumber, details } = Astro.props;
+const sucesTet = success ? "✅" : "❌";
+
+---
+
+<a
+href={`/launch/${id}`}
+class="group relative block overflow-hidden rounded-lg bg-white shadow-md transition hover:scale-[1.01] hover:shadow-xl"
+>
+
+<picture class="flex justify-center p-4">
+    <img class="mb-5 rounded-lg" src={img} alt={`Pacth for launch ${id}`} />
+</picture>
