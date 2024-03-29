@@ -23,9 +23,18 @@ class="rounded-lg border shadow-md bg-gray-800 border-gray-700 hover:scale-105 h
 
 <header class="p-4 flex-grow">
     <!-- <span class="text-xs font-semibold ,mr-2 px-2.5 py-0.5 rounded"> -->
-<span class={`text-xs font-semibold mr-2 px-2.5 py-0.5 rounded ${launchStatus === 'Failure' ? 'bg-red-400 text-red-900' : 'bg-green-400 text-green-900'}`}>
-  {launchStatus}
+<span 
+class:list={[
+    "text-xs font-semibold mr-2 px-2.5 py-0.5 rounded",
+    {
+        'bg-green-400 text-green-900': success,
+        'bg-red-400 text-red-900': !success
+    }
+]}
+>
+{launchStatus}
 </span>
+
 </span>
     <h2 class=" my-2 text-2xl font-bold tracking-tight text-white">
       Flight  #{flightNumber}
