@@ -1,6 +1,7 @@
 ---
 import { getLaunchBy } from "../../services/spacesx";
 import Layout from "../../layouts/Layout.astro";
+import { getLatestLaunches } from "../../services/spacesx";
 
 const { id } = Astro.params;
 
@@ -11,11 +12,19 @@ if (id) {
     launch = await getLaunchBy({ id });
 }
 
-export function getStaticPaths() {
+// export function getStaticPaths() {
+//     // Llamar a una api externa
+//     // Para saber todas las ids que debes generar
+
+//     return [{ params: { id: "5eb87cd9ffd86e000604b32a" } }];
+// }
+export async function getStaticPaths() {
     // Llamar a una api externa
     // Para saber todas las ids que debes generar
 
-    return [{ params: { id: "5eb87cd9ffd86e000604b32a" } }];
+    const launches = await getLatestLaunches();
+
+    return launches.map((launch) => ({ params: { id: launch.id } }));
 }
 
 console.log(launch);
