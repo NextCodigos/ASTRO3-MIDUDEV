@@ -11,8 +11,18 @@ if (id) {
     launch = await getLaunchBy({ id });
 }
 
+export function getStaticPaths() {
+    // Llamar a una api externa
+    // Para saber todas las ids que debes generar
+
+    return [{ params: { id: "5eb87cd9ffd86e000604b32a" } }];
+}
+
 console.log(launch);
 ---
 
-<Layout title="SpaceX Launch" />
-{launch && <article>{launch.id}</article>}
+<Layout title="SpaceX Launch">
+    <article>
+        {launch?.id}
+    </article>
+</Layout>
